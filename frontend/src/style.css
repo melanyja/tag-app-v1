@@ -1,0 +1,35 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    overflow-y: scroll;
+
+}
+
+input, textarea, select{
+    @apply block outline-none border border-gray-200 rounded-md p-2 max-w-[500px]
+}
+
+.primary-btn{
+    @apply hover:bg-[#059862]   bg-[#04AA6D] rounded-md px-4 py-2  text-white font-semibold hover:cursor-pointer;
+}
+
+
+textarea{
+    @apply resize-none
+}
+
+body{
+    @apply bg-gray-100
+}
+
+.error-box {
+    @apply mt-1 flex items-center gap-2 text-sm text-red-600 bg-red-100 px-3 py-2 rounded-md border border-red-300;
+  }
+
+  .success-box {
+    @apply mt-4 flex items-center gap-2 text-sm text-green-700 bg-green-100 px-4 py-2 rounded-md border border-green-300;
+  }
+  
